@@ -1,0 +1,29 @@
+{
+  "name": "gm-discord-theme",
+  "version": "1.0.0",
+  "description": "A discod theme",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint \"**/*.scss\" || true",
+    "lint-fix": "stylelint \"**/*.scss\" --fix || true",
+    "build": "sass themes/GM/scss/style.scss themes/GM/css/GM.css --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabn17/GM-discord-theme.git"
+  },
+  "keywords": [
+    "discordjs"
+  ],
+  "author": "Martin & Patrik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mabn17/GM-discord-theme/issues"
+  },
+  "homepage": "https://github.com/mabn17/GM-discord-theme#readme",
+  "devDependencies": {
+    "sass": "^1.29.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  }
+}
