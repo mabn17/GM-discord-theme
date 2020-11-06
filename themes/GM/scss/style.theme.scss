@@ -1,23 +1,15 @@
 /**
- * @name Frosted Glass
- * @author Gibbu#1211
- * @version 2.0.0
- * @description Display your picture of choice with adjustable blur and brightness. Dark theme is required.
- * @invite ZHthyCw
- * @donate https://paypal.me/IanRGibson
- * @authorId 174868361040232448
- * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass
- * @website https://gibbu.me/
+ * @name GM
+ * @author 8ptk4 && mabn17
+ * @version 1.0.0
+ * @description A light gray theme for Discord
+ * @source https://github.com/mabn17/GM-discord-theme/
 */
 
 
-@import url("https://discordstyles.github.io/FrostedGlass/base.css");
-
-/* BlackBox tags */
-@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
-
-/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
-@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+@import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/base.css");
+@import url('https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/user-tags.css');
+@import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/windows-titlebar.css");
 
 :root {
   /* Popout & Modal variables */
@@ -463,3 +455,4 @@
 	background: var(--accent) !important;
 	transition: background-color .3s ease;
 	z-index:-1;
+}
