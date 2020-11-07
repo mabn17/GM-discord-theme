@@ -7,9 +7,17 @@
 */
 
 
-@import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/base.css");
+/* @import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/base.css");
 @import url('https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/user-tags.css');
-@import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/windows-titlebar.css");
+@import url("https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/windows-titlebar.css"); */
+
+@import url("https://drive.google.com/uc?export=download&id=1mmsgfSSa9xSr7Vn4Qps-nrCPuOYJoPEv");
+@import url("https://drive.google.com/uc?export=download&id=1sapDNcFliGkfxp-TMrdDqrLwEQ5DeI2j");
+@import url("https://drive.google.com/uc?export=download&id=1qXvXDjsS9Yq-y5qOy77hNh0MOxz1-FGv");
+@import url("https://drive.google.com/uc?export=download&id=1j93Z0O07Axcd1fg0ehsdFO2F6sEX_aI9");
+@import url("https://drive.google.com/uc?export=download&id=11rjFWzS07aabEvyz2sMywOWHpEMzuaMP");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap');
 
 :root {
   /* Popout & Modal variables */
@@ -50,22 +58,15 @@
     Visit https://fonts.google.com and select one to your liking.
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
-  --font: 'Whitney';
+  --font: 'Inter';
 
   /* Do not touch */
   --update-notice-1: none;
+
+
+  --messages-content-margin: 20px;
+
 }
-
-
-/* div[class^="markup-"]
-{
-    font-size: 14px !important;
-    color: red;
-    background: green;
-    margin: 0;
-    padding: 0;
-} */
-
 
 #app-mount .message-2qnXI6 {
   background: rgba(0,0,0,0.2) !important;
@@ -74,30 +75,23 @@
 #app-mount .messageContainer-gbhlwo {
   padding: 15px 15px 15px 0;
   box-sizing: border-box;
-  border: 1px solid red;
-  background: red !important;
 }
-
-/* #app-mount .message-2qnXI6 .reaction-1hd86g.reactionMe-wv5HKu .reactionCount-2mvXRV {
-  color: red;
-  background: red;
-} */
-
 
 #app-mount .message-2qnXI6 .wrapper-2aW0bm {
   background: rgba(0,0,0,0.2) !important;
 }
 
 /* Code blocks */
-/* #app-mount .message-2qnXI6 .attachment-33OFj0,
+#app-mount .message-2qnXI6 .attachment-33OFj0,
 #app-mount .message-2qnXI6 .wrapperAudio-1jDe0Q,
 #app-mount .message-2qnXI6 code {
-  background-color: red;
   border: none;
-} */
-/* #app-mount .message-2qnXI6 .embedFull-2tM8-- {
-  background-color: red;
-} */
+  padding: 20px !important;
+}
+
+#app-mount .message-2qnXI6 .embedFull-2tM8-- {
+  margin-left: var(--messages-content-margin);
+}
 
 
 
@@ -132,49 +126,40 @@
   box-shadow: none;
 } */
 
-
-@keyframes headerBlurDelay {
+/* @keyframes headerBlurDelay {
 	0% {
 		backdrop-filter:blur(0);
 	}
 	100% {
 		backdrop-filter:blur(10px);
 	}
-}
+} */
 
 /* message header */
 .cozy-3raOZG .header-23xsNx {
 	padding: 0;
 	margin: 0;
 	height: 30px;
-	background-color: transparent;
+	background-color: transparent !important;
 	position: relative;
 	display: flex;
   justify-content: space-between;
   align-items: center;
 	z-index:10;
   width:100%;
-  background: red;
+  /* background: red; */
 }
 
 .timestamp-3ZCmNB {
 	font-size: var(--size3) !important;
   cursor: text;
   display: flex;
-  /* padding-left: 50px !important; */
   justify-content: flex-end !important;
-}
-
-.full-motion .cozy-3raOZG .header-23xsNx {
-	animation:headerBlurDelay 0ms ease forwards;
-	animation-delay:500ms;
-	backdrop-filter: blur(10px);
+  padding-right: 10px;
 }
 
 .message-2qnXI6,
 .cozy-3raOZG.wrapper-2a6GCs:not(.message-2qnXI6) {
-	/* background: red !important; */
-	/* border-left: 2px solid rgba(255, 0, 0, 0.075) !important; */
 	margin: 0 20px;
 	padding-right: 0;
 }
@@ -200,10 +185,11 @@
 .cozy-3raOZG .messageContent-2qWWxC {
 	margin-left:0;
 	padding-left:55px;
-	padding-bottom:25px;
+	/* padding-bottom:25px; */
 	font-size: 15px !important;
-	max-width:calc(100% - 125px);
-  position:relative;
+	max-width: calc(100% - 125px);
+  position: relative;
+  margin-left: var(--messages-content-margin);
 }
 
 .full-motion .cozy-3raOZG .messageContent-2qWWxC {
@@ -212,7 +198,7 @@
 
 .groupStart-23k01U ~ .message-2qnXI6:not(.groupStart-23k01U) .messageContent-2qWWxC {
 	top:-25px;
-	overflow:visible;
+	/* overflow:visible; */
 	padding-bottom:0 !important;
 }
 
@@ -225,9 +211,9 @@
 
 
 .cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e {
+  /* float: right !important;  */
 	z-index:1;
-  left: 0;
-	margin: 0 10px;
+	margin: 0 10px; 
 	display: block;
 	margin-top: calc(30px + .25em);
 	/* border-radius: 0px; */
@@ -238,6 +224,7 @@
 
 .username-1A8OIy {
   color:lightgrey !important;
+  font-weight: 500;
 }
 
 .cozy-3raOZG .header-23xsNx .username-1A8OIy {
@@ -247,7 +234,7 @@
   padding-right: 10px;
 	line-height: normal;
 	vertical-align: middle;
-	display: flex;
+  display: flex;
 	align-items: center;
 	/* box-shadow: inset 10px 0 10px -12px currentColor; */
 	/* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
@@ -260,10 +247,11 @@
 
 .username-1A8OIy:hover {
   color: rgb(231, 0, 0) !important;
-  background: linear-gradient(to right, salmon 50%, lightblue 50%) right;
+  /* background-image: linear-gradient(to right, #600 50%, yellow 50%);
+  transition: background-position 1s; */
+  background: linear-gradient(to right, salmon 50%, lightblue 50%);
   background-size: 200%;
   transition: .5s ease-in;
-  
 }
 
 
@@ -310,7 +298,8 @@
 	text-shadow: none;
 	color: rgba(255, 255, 255, 0.95);
 	position: absolute;
-	right: 0px;
+  /* right: 0px; */
+  left: 0px;
 	margin: 0 6px;
 	top: 50%;
 	transform: translateY(-50%);
@@ -322,7 +311,7 @@
 	left:36px !important;
 	bottom:-50px !important;
 	font-size:var(--size2) !important;
-	border-radius:0;
+  border-radius:0;
 }
 
 .separator-42rNt0,
@@ -409,16 +398,10 @@
 }
 
 .edited-3sfAzf {
-	background: var(--hover);
-	width: 13px !important;
-	height: 13px !important;
-	font-size: 0;
-	display: inline-block;
-	line-height: 26px;
-	margin-left: 5px;
-	transition: 150ms ease all;
-	-webkit-mask-size: cover;
-	-webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTI4Ljg5OXB4IiBoZWlnaHQ9IjUyOC44OTlweCIgdmlld0JveD0iMCAwIDUyOC44OTkgNTI4Ljg5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTI4Ljg5OSA1MjguODk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTMyOC44ODMsODkuMTI1bDEwNy41OSwxMDcuNTg5bC0yNzIuMzQsMjcyLjM0TDU2LjYwNCwzNjEuNDY1TDMyOC44ODMsODkuMTI1eiBNNTE4LjExMyw2My4xNzdsLTQ3Ljk4MS00Ny45ODFjLTE4LjU0My0xOC41NDMtNDguNjUzLTE4LjU0My02Ny4yNTksMGwtNDUuOTYxLDQ1Ljk2MWwxMDcuNTksMTA3LjU5bDUzLjYxMS01My42MTFDNTMyLjQ5NSwxMDAuNzUzLDUzMi40OTUsNzcuNTU5LDUxOC4xMTMsNjMuMTc3eiBNMC4zLDUxMi42OWMtMS45NTgsOC44MTIsNS45OTgsMTYuNzA4LDE0LjgxMSwxNC41NjVsMTE5Ljg5MS0yOS4wNjlMMjcuNDczLDM5MC41OTdMMC4zLDUxMi42OXoiLz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+);
+  background: var(--gradient);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
 
 .edited-DL9ECl:hover {
@@ -440,6 +423,11 @@
 	position:relative;
 }
 
+/* MESSAGE CONTAINER */
+.cozy-3raOZG.wrapper-2a6GCs {
+  padding-right: 0 !important;
+}
+
 .backgroundFlash-24qWLN .cozy-3raOZG.wrapper-2a6GCs {
 	margin:0;
 }
@@ -455,4 +443,37 @@
 	background: var(--accent) !important;
 	transition: background-color .3s ease;
 	z-index:-1;
+}
+
+
+.avatar-1BDn8e {
+  left: auto !important;
+  right: 12px !important;
+}
+
+/* #app-mount .message-2qnXI6 .reaction-1hd86g.reactionMe-wv5HKu .reactionCount-2mvXRV {
+  color: red;
+  background: red !important;
+} */
+
+
+/* #app-mount .message-2qnXI6 .wrapper-2aW0bm {
+  background:red !important;
+  float: left !important;
+} */
+
+
+.buttonContainer-DHceWr {
+  right: auto !important;
+  left: 65px;
+}
+
+ .container-3npvBV {
+  background-color: rgb(19, 19, 19) !important;
+}
+
+.botTagRegular-2HEhHi {
+  position: absolute !important;
+  top: 30px;
+  left: 7px;
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/tags.css";
-@import "https://raw.githubusercontent.com/mabn17/GM-discord-theme/main/themes/tag-animations.css";
+/* @import "./tags.css";
+@import "./tag-animations.css"; */
 
 :root {
   --mc: var(--main-color);
