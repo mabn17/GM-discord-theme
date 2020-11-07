@@ -66,6 +66,10 @@
 
   --messages-content-margin: 20px;
 
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eddf1250518945.58d28e2ec46e7.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
 }
 
 #app-mount .message-2qnXI6 {
